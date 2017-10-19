@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Train Schedule</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div class="container">
+  		<div class="jumbotron text-center">
+    		<h1>Bootcamp Station</h1> 
+    		<p>All Aboard!</p> 
+  		</div>
+  		<div>
+  			<table class="table table-striped" id="train-table">
+    			<thead>
+      				<tr>
+        			<th>Train</th>
+        			<th>Destination</th>
+        			<th>Frequency (minutes)</th>
+        			<th>Next Arrival</th>
+        			<th>Minutes Away</th>
+      				</tr>
+   				</thead>
+    			<tbody>
+    			</tbody>
+ 			 </table>
+  		</div>
+  		<div class="panel panel-primary">
+            <h3 class="text-center">Add New Employee</h3>
+            <form id="form-group">
+        		  <div class="form-group">
+                    <label for="issueDescriptionInput">Train:</label>
+                    <input type="text" class="form-control" id="new-train" >
+              </div>
+        		  <div class="form-group">
+                    <label for="issueDescriptionInput">Destination:</label>
+                    <input type="text" class="form-control" id="new-destination">
+              </div>
+              <div class="form-group">
+                    <label for="issueDescriptionInput">First Train Time (hh:mm - military time):</label>
+                    <input type="text" class="form-control" id="first-train">
+              </div>
+        		  <div class="form-group">
+                    <label for="issueDescriptionInput">Frequency (Minutes):</label>
+                    <input type="text" class="form-control" id="new-frequency">
+              </div>
+              <button type="sumbit" id="submit" class="btn btn-primary">All Aboard!</button>
+            </form>
+        </div>
+  <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/logic.js"></script>
+</body>
+</html>
