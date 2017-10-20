@@ -4,15 +4,16 @@
 	<meta charset="utf-8">
 	<title>Train Schedule</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
 </head>
 <body>
 	<div class="container">
   		<div class="jumbotron text-center">
-    		<h1>Bootcamp Station</h1> 
+    		<h1 id="header">Bootcamp Station</h1> 
     		<p>All Aboard!</p> 
   		</div>
-  		<div>
+  		<div class ="panel panel-primary">
   			<table class="table table-striped" id="train-table">
     			<thead>
       				<tr>
@@ -28,7 +29,7 @@
  			 </table>
   		</div>
   		<div class="panel panel-primary">
-            <h3 class="text-center">Add New Employee</h3>
+            <h3 class="text-center">Add a Train to the Scheule</h3>
             <form id="form-group">
         		  <div class="form-group">
                     <label for="issueDescriptionInput">Train:</label>
@@ -39,7 +40,7 @@
                     <input type="text" class="form-control" id="new-destination">
               </div>
               <div class="form-group">
-                    <label for="issueDescriptionInput">First Train Time (hh:mm - military time):</label>
+                    <label for="issueDescriptionInput">First Train Time (HH:mm - military time):</label>
                     <input type="text" class="form-control" id="first-train">
               </div>
         		  <div class="form-group">
@@ -49,8 +50,9 @@
               <button type="sumbit" id="submit" class="btn btn-primary">All Aboard!</button>
             </form>
         </div>
-  <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	<script src="assets/javascript/logic.js"></script>
 </body>
 </html>

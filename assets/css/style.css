@@ -1,0 +1,21 @@
+.jumbotron {
+	background-color: #377bb5;
+}
+
+.form-group {
+	margin: 10px;
+	width: 90%;
+}
+
+#submit {
+	margin: 10px;
+
+}
+
+#header {
+	color: white;
+}
+
+p {
+	color: white;
+}
